@@ -1,0 +1,39 @@
+actors
+id name
+1 Dhanush
+2 SK
+
+
+movies
+id name
+1 three
+2 random
+
+actors_movies
+id actor_id movie_id
+1 1 1
+2 2 1
+3 1 2
+
+actor_name movie_id
+Dhanush 1
+SK 1
+Dhanush 2
+
+
+
+all the movies for a single actor
+actor name, movie name
+Dhanush 3
+Sk 3
+
+
+
+
+
+select * from movies where id in (select movie_id from actors_movies where actor_id = 1)
+
+
+
+
+
